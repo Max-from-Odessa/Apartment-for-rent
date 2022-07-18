@@ -5,4 +5,4 @@
 
 **9000 hryvnas** per month.
 
-[info](Apartment for rent.md)
+*[info](Apartment for rent.md)
