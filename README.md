@@ -5,7 +5,7 @@
 
 # _Apartment for rent in Odessa._
 
-I am renting my 1-room cozy apartment in Odessa on the street Srednefontanskaya 30/1, inside the quarter, a quiet courtyard. First rent, fresh renovation, 8/14 fl., 44 sq. meters. Kitchen + room, balcony. Designer expensive renovation, furniture, appliances, shower, double bed, 2 wardrobes. Guest parking. Internet WiFi. The House Is Very Warm, Has Its Own Boiler Room, There Is A Heat Meter. Good Transport Interchange, Within Walking Distance Of The Station, Privoz, 5 Universities, Supermarkets, Water station, Park, Playground, Sports Ground, Kindergarten, School. The price for the period of martial law is 8000 UAH / month + utilities, deposit. Mob. tel.: +38о639577521
+I am renting my 1-room cozy apartment in Odessa on the street Srednefontanskaya 30/1, inside the quarter, a quiet courtyard. First rent, fresh renovation, 8/14 fl., 44 sq. meters. Kitchen + living room, balcony. Designer renovation, furniture, appliances, shower, double bed, 2 wardrobes. Guest parking. Internet WiFi. The House Is Very Warm, Has Its Own Boiler Room, There Is A Heat Meter. Good Transport Interchange, Within Walking Distance Of The Railway Station, Privoz market, 5 Universities, Supermarkets, Water station, Park, Playground, Sports Ground, Kindergarten, School. The price for the period of martial law is 8000 UAH / month + utilities, deposit. Mob. tel.: +38о639577521
 
 ![](1.jpg)
 
