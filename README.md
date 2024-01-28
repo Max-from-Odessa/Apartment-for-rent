@@ -5,7 +5,7 @@
 
 # _Apartment for rent in Odessa_
 
-I am renting my 1-room cozy apartment in Odessa on the street Srednefontanskaya 30/1, inside the quarter, a quiet courtyard. Fresh renovation, 8/14 fl., 44 sq. meters. Kitchen + living room, balcony. Designer renovation, furniture, appliances, shower, double bed, 2 wardrobes. Guest parking. Internet WiFi. The House Is Very Warm, Has Its Own Boiler Room, There Is A Heat Meter. Good Transport Interchange, Within Walking Distance Of The Railway Station, Privoz market, 5 Universities, Supermarkets, Water station, Park, Playground, Sports Ground, Kindergarten, School. 
+I am renting my 1-room cozy apartment in quiet part of Odessa on the street Srednefontanskaya 30/1, inside the quarter, a quiet courtyard. Fresh renovation, 8/14 fl., 44 sq. meters. Kitchen + living room, balcony. Designer renovation, furniture, appliances, shower, double bed, 2 wardrobes. Guest parking. Internet WiFi. The House Is Very Warm, Has Its Own Boiler Room, There Is A Heat Meter. Good Transport Interchange, Within Walking Distance Of The Railway Station, Privoz market, 5 Universities, Supermarkets, Water station, Park, Playground, Sports Ground, Kindergarten, School. 
 
 ![](1.jpg)
 
