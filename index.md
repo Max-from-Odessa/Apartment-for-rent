@@ -670,7 +670,7 @@
 
     <p><i class="fas fa-fire"></i> <strong>Дом очень тёплый</strong>, с собственной котельной и теплосчётчиком.</p>
 
-    <p><i class="fas fa-map-marker-alt"></i> <strong>Инфраструктура:</strong> отличная транспортная развязка, в пешей доступности ЖД вокзал, Привоз, университеты, супермаркеты, бювет, парк, детская площадка, спортплощадка, детсад и школа.</p>
+    <p><i class="fas fa-map-marker-alt"></i> <strong>Инфраструктура:</strong> отличная транспортная развязка, в пешей доступности ЖД вокзал, Привоз, университеты, супермаркеты, бювет, парк, детская площадка, спортплощадка, детсад и школы.</p>
 
     <span class="note"><i class="fas fa-exclamation-circle"></i> Квартира сдаётся только арендаторам <strong>без животных и детей</strong>.</span>
   </section>
@@ -808,20 +808,33 @@
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     // Initialize the map with correct coordinates for Odessa, Serednofontanska 30/1
-    const map = L.map('map').setView([46.4690, 30.7307], 16);
+    const map = L.map('map').setView([46.454907, 30.737077], 17);
     
     // Add OpenStreetMap tiles
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-      maxZoom: 18
+      maxZoom: 19
     }).addTo(map);
     
+    // Add a custom icon for the marker
+    const customIcon = L.icon({
+      iconUrl: 'data:image/svg+xml;base64,' + btoa(`
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="45" viewBox="0 0 24 24" fill="#2563eb" stroke="#ffffff" stroke-width="2">
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/>
+        </svg>
+      `),
+      iconSize: [30, 45],
+      iconAnchor: [15, 45],
+      popupAnchor: [0, -45]
+    });
+    
     // Add a marker for the apartment location
-    const apartmentMarker = L.marker([46.4690, 30.7307]).addTo(map);
+    const apartmentMarker = L.marker([46.454907, 30.737077], {icon: customIcon}).addTo(map);
     apartmentMarker.bindPopup(`
-      <div style="padding: 10px;">
-        <h3 style="margin: 0 0 5px; color: #2563eb;">Apartment Location</h3>
-        <p style="margin: 0;">Serednofontanska 30/1, Odessa, Ukraine</p>
+      <div style="padding: 10px; text-align: center;">
+        <h3 style="margin: 0 0 8px; color: #2563eb; font-size: 16px;">Apartment Location</h3>
+        <p style="margin: 0; font-size: 14px;">Serednofontanska 30/1, Odessa, Ukraine</p>
+        <p style="margin: 8px 0 0; font-size: 12px; color: #666;">Житловий комплекс "Середньофонтанський"</p>
       </div>
     `).openPopup();
     
