@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="utf-8">
@@ -70,7 +71,7 @@
       text-align: center;
       margin: 30px 0;
       padding: 20px;
-      background: #e6f0ff;
+      background: #e6f0ff; /* Very pale blue as requested */
       border-radius: var(--radius);
       color: #000; /* Changed to black as requested */
       box-shadow: var(--shadow);
@@ -781,16 +782,7 @@
         </div>
         <div>
           <h3>Phone</h3>
-          <p>+380 XX XXX XX XX</p>
-        </div>
-      </div>
-      <div class="contact-item">
-        <div class="contact-icon">
-          <i class="fab fa-telegram"></i>
-        </div>
-        <div>
-          <h3>Telegram</h3>
-          <p>@username</p>
+          <p>+380678746780</p>
         </div>
       </div>
       <div class="contact-item">
@@ -799,16 +791,7 @@
         </div>
         <div>
           <h3>Email</h3>
-          <p>email@example.com</p>
-        </div>
-      </div>
-      <div class="contact-item">
-        <div class="contact-icon">
-          <i class="fab fa-viber"></i>
-        </div>
-        <div>
-          <h3>Viber</h3>
-          <p>+380 XX XXX XX XX</p>
+          <p>u_bob@ua.fm</p>
         </div>
       </div>
     </div>
@@ -824,8 +807,8 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    // Initialize the map
-    const map = L.map('map').setView([46.4825, 30.7233], 15);
+    // Initialize the map with correct coordinates for Odessa, Serednofontanska 30/1
+    const map = L.map('map').setView([46.4690, 30.7307], 16);
     
     // Add OpenStreetMap tiles
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -834,11 +817,11 @@
     }).addTo(map);
     
     // Add a marker for the apartment location
-    const apartmentMarker = L.marker([46.4825, 30.7233]).addTo(map);
+    const apartmentMarker = L.marker([46.4690, 30.7307]).addTo(map);
     apartmentMarker.bindPopup(`
       <div style="padding: 10px;">
         <h3 style="margin: 0 0 5px; color: #2563eb;">Apartment Location</h3>
-        <p style="margin: 0;">Srednefontanskaya 30/1, Odessa, Ukraine</p>
+        <p style="margin: 0;">Serednofontanska 30/1, Odessa, Ukraine</p>
       </div>
     `).openPopup();
     
@@ -893,7 +876,7 @@
     });
     
     // Close lightbox
-    lightboxClose.addEventListener('click', (e) => {
+    lightboxClose.addEventListener('click', (e) {
       e.stopPropagation();
       lightbox.classList.remove('active');
       document.body.style.overflow = ''; // Re-enable scrolling
