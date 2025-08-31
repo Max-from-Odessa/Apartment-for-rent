@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Luxury 1-Bedroom Apartment for Rent in Odessa | Квартира в Одесі</title>
+  <title>1-Bedroom Apartment for Rent in Odessa | Квартира в Одесі</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     /* ========== Fonts & vars ========== */
@@ -811,7 +811,7 @@
   </section>
 
   <footer>
-    <p>© 2023 Luxury Apartment Rental • Odessa, Ukraine</p>
+    <p>© 2025 Apartment Rental • Odessa, Ukraine</p>
   </footer>
 </div>
 
