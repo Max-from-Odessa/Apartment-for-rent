@@ -1,0 +1,92 @@
+/* Шрифты */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@400;500&display=swap');
+
+:root{
+  --bg: #f7f9fc;
+  --fg: #2c3e50;
+  --text: #333;
+  --accent: #3498db;
+  --ok: #27ae60;
+  --danger: #c0392b;
+  --card-bg: #fff;
+  --shadow: 0 8px 22px rgba(0,0,0,0.08);
+  --radius: 14px;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Montserrat','Roboto',system-ui,-apple-system,Segoe UI,Arial,sans-serif;
+  line-height: 1.65;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.container {
+  max-width: 900px;
+  margin: 22px auto;
+  padding: 0 16px;
+}
+
+header {
+  text-align: center;
+  margin: 10px 0 18px;
+}
+
+header h1 {
+  font-size: 28px;
+  color: var(--fg);
+  margin: 0 0 6px;
+}
+
+header p {
+  margin: 0;
+  color: #556;
+}
+
+section {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 22px 24px;
+  margin: 18px 0;
+}
+
+h1 em, h2 em { color: var(--accent); font-style: normal; }
+h2 { margin: 0 0 12px; color: var(--fg); }
+
+p { margin: 10px 0; }
+
+ul { margin: 10px 0 0 0; padding: 0 0 0 18px; }
+
+.note {
+  display: block;
+  margin-top: 10px;
+  font-weight: 700;
+  color: var(--danger);
+  text-align: left;
+}
+
+.hr {
+  height: 1px;
+  background: rgba(0,0,0,0.06);
+  margin: 14px 0;
+  border: 0;
+}
+
+footer {
+  text-align: center;
+  color: #678;
+  font-size: 14px;
+  margin: 22px 0 30px;
+}
+
+@media (max-width: 520px) {
+  section { padding: 18px; }
+  header h1 { font-size: 24px; }
+}
