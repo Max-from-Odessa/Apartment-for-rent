@@ -1,38 +1,42 @@
-/* Шрифты */
+/* ========== Шрифты ========== */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@400;500&display=swap');
 
-:root{
-  --bg: #f7f9fc;
-  --fg: #2c3e50;
-  --text: #333;
-  --accent: #3498db;
-  --ok: #27ae60;
-  --danger: #c0392b;
-  --card-bg: #fff;
-  --shadow: 0 8px 22px rgba(0,0,0,0.08);
+/* ========== Цвета Material Design ========== */
+:root {
+  --md-primary: #6200EE;
+  --md-secondary: #03DAC6;
+  --md-background: #F5F5F5;
+  --md-surface: #FFFFFF;
+  --md-text: #212121;
+  --md-text-secondary: #757575;
+  --md-error: #B00020;
   --radius: 14px;
+  --shadow: 0 8px 22px rgba(0,0,0,0.08);
 }
 
+/* ========== Базовые стили ========== */
 * { box-sizing: border-box; }
 
 html, body {
   margin: 0;
   padding: 0;
-  background: var(--bg);
-  color: var(--text);
+  background: var(--md-background);
+  color: var(--md-text);
   font-family: 'Montserrat','Roboto',system-ui,-apple-system,Segoe UI,Arial,sans-serif;
   line-height: 1.65;
 }
 
-a { color: var(--accent); text-decoration: none; }
+a { color: var(--md-primary); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
 .container {
-  max-width: 900px;
+  max-width: 900px;   /* на больших экранах */
+  width: 95%;         /* почти вся ширина на мобильных */
   margin: 22px auto;
   padding: 0 16px;
 }
 
+/* ========== Заголовки и текст ========== */
 header {
   text-align: center;
   margin: 10px 0 18px;
@@ -40,27 +44,19 @@ header {
 
 header h1 {
   font-size: 28px;
-  color: var(--fg);
+  color: var(--md-primary);
   margin: 0 0 6px;
 }
 
 header p {
   margin: 0;
-  color: #556;
+  color: var(--md-text-secondary);
 }
 
-section {
-  background: var(--card-bg);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  padding: 22px 24px;
-  margin: 18px 0;
-}
+h1 em, h2 em { color: var(--md-secondary); font-style: normal; }
+h2 { margin: 0 0 12px; color: var(--md-primary); }
 
-h1 em, h2 em { color: var(--accent); font-style: normal; }
-h2 { margin: 0 0 12px; color: var(--fg); }
-
-p { margin: 10px 0; }
+p { margin: 10px 0; color: var(--md-text); }
 
 ul { margin: 10px 0 0 0; padding: 0 0 0 18px; }
 
@@ -68,10 +64,45 @@ ul { margin: 10px 0 0 0; padding: 0 0 0 18px; }
   display: block;
   margin-top: 10px;
   font-weight: 700;
-  color: var(--danger);
+  color: var(--md-error);
   text-align: left;
 }
 
+/* ========== Секции и карточки ========== */
+section {
+  background: var(--md-surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 22px 24px;
+  margin: 18px 0;
+}
+
+/* ========== Галерея картинок ========== */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  align-items: start;
+}
+
+.gallery a {
+  display: block;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform .25s ease;
+}
+
+.gallery img:hover { transform: scale(1.03); }
+
+/* ========== Разделитель ========== */
 .hr {
   height: 1px;
   background: rgba(0,0,0,0.06);
@@ -79,14 +110,18 @@ ul { margin: 10px 0 0 0; padding: 0 0 0 18px; }
   border: 0;
 }
 
+/* ========== Футер ========== */
 footer {
   text-align: center;
-  color: #678;
+  color: var(--md-text-secondary);
   font-size: 14px;
   margin: 22px 0 30px;
 }
 
+/* ========== Адаптивность под смартфоны ========== */
 @media (max-width: 520px) {
-  section { padding: 18px; }
-  header h1 { font-size: 24px; }
+  section { padding: 16px; }
+  header h1 { font-size: 22px; }
+  p { font-size: 15px; }
+  .gallery { grid-template-columns: 1fr; gap: 8px; }
 }
