@@ -92,26 +92,51 @@
 
 <!-- Галерея -->
 <div class="gallery">
-  <img src="1.jpg" alt="">
-  <img src="2.jpg" alt="">
-  <img src="3.jpg" alt="">
-  <img src="6.jpg" alt="">
-  <img src="7.jpg" alt="">
-  <img src="8.jpg" alt="">
-  <img src="9.jpg" alt="">
-  <img src="10.jpg" alt="">
-  <img src="11.jpg" alt="">
-  <img src="12.jpg" alt="">
-  <img src="13.jpg" alt="">
-  <img src="14.jpg" alt="">
-  <img src="15.jpg" alt="">
-  <img src="16.jpg" alt="">
-  <img src="17.jpg" alt="">
-  <img src="18.jpg" alt="">
-  <img src="19.jpg" alt="">
-  <img src="20.jpg" alt="">
-  <img src="21.jpg" alt="">
-  <img src="22.jpg" alt="">
-  <img src="4.jpg" alt="">
-  <img src="5.jpg" alt="">
+  <a href="#img1"><img src="1.jpg" alt=""></a>
+  <a href="#img2"><img src="2.jpg" alt=""></a>
+  <a href="#img3"><img src="3.jpg" alt=""></a>
+  <a href="#img4"><img src="4.jpg" alt=""></a>
+  <a href="#img5"><img src="5.jpg" alt=""></a>
+  <a href="#img6"><img src="6.jpg" alt=""></a>
+  <a href="#img7"><img src="7.jpg" alt=""></a>
+  <a href="#img8"><img src="8.jpg" alt=""></a>
+  <a href="#img9"><img src="9.jpg" alt=""></a>
+  <a href="#img10"><img src="10.jpg" alt=""></a>
+  <a href="#img11"><img src="11.jpg" alt=""></a>
+  <a href="#img12"><img src="12.jpg" alt=""></a>
+  <a href="#img13"><img src="13.jpg" alt=""></a>
+  <a href="#img14"><img src="14.jpg" alt=""></a>
+  <a href="#img15"><img src="15.jpg" alt=""></a>
+  <a href="#img16"><img src="16.jpg" alt=""></a>
+  <a href="#img17"><img src="17.jpg" alt=""></a>
+  <a href="#img18"><img src="18.jpg" alt=""></a>
+  <a href="#img19"><img src="19.jpg" alt=""></a>
+  <a href="#img20"><img src="20.jpg" alt=""></a>
+  <a href="#img21"><img src="21.jpg" alt=""></a>
+  <a href="#img22"><img src="22.jpg" alt=""></a>
 </div>
+
+<!-- Lightbox окна -->
+<div id="img1" class="lightbox"><a href="#"><img src="1.jpg" alt=""></a></div>
+<div id="img2" class="lightbox"><a href="#"><img src="2.jpg" alt=""></a></div>
+<div id="img3" class="lightbox"><a href="#"><img src="3.jpg" alt=""></a></div>
+<div id="img4" class="lightbox"><a href="#"><img src="4.jpg" alt=""></a></div>
+<div id="img5" class="lightbox"><a href="#"><img src="5.jpg" alt=""></a></div>
+<div id="img6" class="lightbox"><a href="#"><img src="6.jpg" alt=""></a></div>
+<div id="img7" class="lightbox"><a href="#"><img src="7.jpg" alt=""></a></div>
+<div id="img8" class="lightbox"><a href="#"><img src="8.jpg" alt=""></a></div>
+<div id="img9" class="lightbox"><a href="#"><img src="9.jpg" alt=""></a></div>
+<div id="img10" class="lightbox"><a href="#"><img src="10.jpg" alt=""></a></div>
+<div id="img11" class="lightbox"><a href="#"><img src="11.jpg" alt=""></a></div>
+<div id="img12" class="lightbox"><a href="#"><img src="12.jpg" alt=""></a></div>
+<div id="img13" class="lightbox"><a href="#"><img src="13.jpg" alt=""></a></div>
+<div id="img14" class="lightbox"><a href="#"><img src="14.jpg" alt=""></a></div>
+<div id="img15" class="lightbox"><a href="#"><img src="15.jpg" alt=""></a></div>
+<div id="img16" class="lightbox"><a href="#"><img src="16.jpg" alt=""></a></div>
+<div id="img17" class="lightbox"><a href="#"><img src="17.jpg" alt=""></a></div>
+<div id="img18" class="lightbox"><a href="#"><img src="18.jpg" alt=""></a></div>
+<div id="img19" class="lightbox"><a href="#"><img src="19.jpg" alt=""></a></div>
+<div id="img20" class="lightbox"><a href="#"><img src="20.jpg" alt=""></a></div>
+<div id="img21" class="lightbox"><a href="#"><img src="21.jpg" alt=""></a></div>
+<div id="img22" class="lightbox"><a href="#"><img src="22.jpg" alt=""></a></div>
+
