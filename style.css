@@ -29,8 +29,13 @@ a:hover{opacity:.85}
 }
 
 /* ========== Header ========== */
-header{text-align:center;margin:18px 0 22px}
-header h1{color:var(--md-primary);font-size:28px;margin:0;font-weight:600}
+header{text-align:center;margin:18px 0 22px
+      background: transparent; /* убираем серый фон */
+  text-align: center;
+  margin: 10px 0 18px;
+  padding: 0; /* если есть паддинги, которые создают «прямоугольник» */}
+header h1{color:var(--md-primary);font-size:28px;margin:0;font-weight:600
+         background: none; /* на всякий случай */}
 header p{color:var(--md-text-secondary);margin:6px 0 0}
 
 /* ========== Card sections ========== */
