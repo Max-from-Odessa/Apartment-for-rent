@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="ru">
 <head>
   <meta charset="utf-8">
@@ -876,7 +876,7 @@
     });
     
     // Close lightbox
-    lightboxClose.addEventListener('click', (e) {
+    lightboxClose.addEventListener('click', (e) => {
       e.stopPropagation();
       lightbox.classList.remove('active');
       document.body.style.overflow = ''; // Re-enable scrolling
