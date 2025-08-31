@@ -4,6 +4,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>1-Bedroom Apartment for Rent in Odessa | Квартира в Одесі</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
   <style>
     /* ========== Fonts & vars ========== */
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
@@ -69,9 +70,9 @@
       text-align: center;
       margin: 30px 0;
       padding: 20px;
-      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      background: #e6f0ff;
       border-radius: var(--radius);
-      color: var(--white);
+      color: #000; /* Changed to black as requested */
       box-shadow: var(--shadow);
     }
     
@@ -79,12 +80,14 @@
       font-size: 28px;
       margin: 0;
       font-weight: 700;
+      color: #000; /* Changed to black as requested */
     }
     
     header p {
       margin: 10px 0 0;
       font-size: 18px;
       opacity: 0.9;
+      color: #000; /* Changed to black as requested */
     }
     
     /* ========== Language Switcher ========== */
@@ -393,14 +396,16 @@
       box-shadow: var(--shadow);
     }
     
-    .map-placeholder {
+    #map {
       height: 100%;
-      background: var(--gray);
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      z-index: 10;
+    }
+    
+    .map-attribution {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 12px;
       color: var(--text-light);
-      font-size: 18px;
     }
     
     /* ========== Footer ========== */
@@ -759,7 +764,10 @@
   <section class="map-section">
     <h2><i class="fas fa-map-marked-alt"></i> Location</h2>
     <div class="map-container">
-      <div id="map" style="height: 100%;"></div>
+      <div id="map"></div>
+    </div>
+    <div class="map-attribution">
+      Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors
     </div>
   </section>
 
@@ -773,129 +781,67 @@
         </div>
         <div>
           <h3>Phone</h3>
-          <p>+380 67 874 67 80</p>
+          <p>+380 XX XXX XX XX</p>
         </div>
       </div>
-         <div class="contact-item">
+      <div class="contact-item">
+        <div class="contact-icon">
+          <i class="fab fa-telegram"></i>
+        </div>
+        <div>
+          <h3>Telegram</h3>
+          <p>@username</p>
+        </div>
+      </div>
+      <div class="contact-item">
         <div class="contact-icon">
           <i class="fas fa-envelope"></i>
         </div>
         <div>
           <h3>Email</h3>
-          <p>u_bob@te.net.ua</p>
+          <p>email@example.com</p>
         </div>
       </div>
+      <div class="contact-item">
+        <div class="contact-icon">
+          <i class="fab fa-viber"></i>
+        </div>
+        <div>
+          <h3>Viber</h3>
+          <p>+380 XX XXX XX XX</p>
+        </div>
       </div>
+    </div>
   </section>
 
   <footer>
-    <p>© 2025 Apartment Rental From Owner • Odessa, Ukraine</p>
+    <p>© 2025 Apartment Rental • Odessa, Ukraine</p>
   </footer>
 </div>
 
-<!-- Google Maps API -->
-<script>
-  // Initialize and add the map
-  function initMap() {
-    // The location of the apartment (approximate coordinates for Odessa)
-    const location = { lat: 46.4825, lng: 30.7233 };
-    
-    // The map, centered at location
-    const map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 15,
-      center: location,
-      styles: [
-        {
-          "featureType": "all",
-          "elementType": "geometry",
-          "stylers": [{ "color": "#f2f2f2" }]
-        },
-        {
-          "featureType": "all",
-          "elementType": "labels.text.fill",
-          "stylers": [{ "gamma": 0.01 }, { "lightness": 20 }]
-        },
-        {
-          "featureType": "all",
-          "elementType": "labels.text.stroke",
-          "stylers": [{ "saturation": -31 }, { "lightness": -33 }, { "weight": 2 }, { "gamma": 0.8 }]
-        },
-        {
-          "featureType": "all",
-          "elementType": "labels.icon",
-          "stylers": [{ "visibility": "off" }]
-        },
-        {
-          "featureType": "landscape",
-          "elementType": "geometry",
-          "stylers": [{ "lightness": 30 }, { "saturation": 30 }]
-        },
-        {
-          "featureType": "poi",
-          "elementType": "geometry",
-          "stylers": [{ "saturation": 20 }]
-        },
-        {
-          "featureType": "poi.park",
-          "elementType": "geometry",
-          "stylers": [{ "lightness": 20 }, { "saturation": -20 }]
-        },
-        {
-          "featureType": "road",
-          "elementType": "geometry",
-          "stylers": [{ "lightness": 10 }, { "saturation": -30 }]
-        },
-        {
-          "featureType": "road",
-          "elementType": "geometry.stroke",
-          "stylers": [{ "saturation": 25 }, { "lightness": 25 }]
-        },
-        {
-          "featureType": "water",
-          "elementType": "all",
-          "stylers": [{ "lightness": -20 }]
-        }
-      ]
-    });
-    
-    // The marker, positioned at location
-    const marker = new google.maps.Marker({
-      position: location,
-      map: map,
-      title: "Apartment Location",
-      icon: {
-        url: "data:image/svg+xml;base64," + btoa(`
-          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="${encodeURIComponent('#2563eb')}" stroke="#ffffff" stroke-width="2">
-            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-            <circle cx="12" cy="10" r="3" fill="${encodeURIComponent('#ffffff')}"></circle>
-          </svg>
-        `),
-        scaledSize: new google.maps.Size(40, 40),
-        anchor: new google.maps.Point(20, 40)
-      }
-    });
-    
-    // Info window for the marker
-    const infoWindow = new google.maps.InfoWindow({
-      content: `
-        <div style="padding: 10px;">
-          <h3 style="margin: 0 0 5px; color: #2563eb;">Apartment Location</h3>
-          <p style="margin: 0;">Srednefontanskaya 30/1, Odessa, Ukraine</p>
-        </div>
-      `
-    });
-    
-    marker.addListener('click', () => {
-      infoWindow.open(map, marker);
-    });
-  }
-</script>
-<script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
-</script>
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
+    // Initialize the map
+    const map = L.map('map').setView([46.4825, 30.7233], 15);
+    
+    // Add OpenStreetMap tiles
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      maxZoom: 18
+    }).addTo(map);
+    
+    // Add a marker for the apartment location
+    const apartmentMarker = L.marker([46.4825, 30.7233]).addTo(map);
+    apartmentMarker.bindPopup(`
+      <div style="padding: 10px;">
+        <h3 style="margin: 0 0 5px; color: #2563eb;">Apartment Location</h3>
+        <p style="margin: 0;">Srednefontanskaya 30/1, Odessa, Ukraine</p>
+      </div>
+    `).openPopup();
+    
     // Language switching functionality
     const langButtons = document.querySelectorAll('.lang-btn');
     const langSections = document.querySelectorAll('.lang-section');
