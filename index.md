@@ -8,7 +8,6 @@
 
   <section>
 
-# _Apartment for rent in Odessa_
 
 ✨ **Cozy 1-room apartment for rent in Odessa** ✨  
 
@@ -37,7 +36,6 @@ Fresh designer renovation, 8th floor of a 14-story building, total area **44 sq.
 
   <section>
 
-# _Здам квартиру в Одесі_
 
 ✨ **Здам 1-кімнатну затишну квартиру в Одесі** ✨  
 
@@ -66,7 +64,6 @@ Fresh designer renovation, 8th floor of a 14-story building, total area **44 sq.
 
   <section>
 
-# _Сдам квартиру в Одессе_
 
 ✨ **Сдам 1-комнатную уютную квартиру в Одессе** ✨  
 
