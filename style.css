@@ -10,8 +10,9 @@
   --md-text: #212121;
   --md-text-secondary: #757575;
   --md-error: #B00020;
-  --radius: 14px;
-  --shadow: 0 8px 22px rgba(0,0,0,0.08);
+  --radius: 12px;
+  --shadow: 0 4px 12px rgba(0,0,0,0.15);
+  --transition: 0.3s ease;
 }
 
 /* ========== Базовые стили ========== */
@@ -26,101 +27,153 @@ html, body {
   line-height: 1.65;
 }
 
-a { color: var(--md-primary); text-decoration: none; }
-a:hover { text-decoration: underline; }
+a { color: var(--md-primary); text-decoration: none; transition: var(--transition); }
+a:hover { opacity: 0.8; }
 
+/* Контейнер */
 .container {
-  max-width: 1200px;   /* шире на больших экранах */
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 12px;
+  padding: 0 16px;
 }
 
-/* ========== Заголовки и текст ========== */
+/* Заголовки */
 header {
   text-align: center;
-  margin: 10px 0 18px;
+  margin: 20px 0 24px;
 }
 
 header h1 {
-  font-size: 28px;
+  font-size: 30px;
   color: var(--md-primary);
-  margin: 0 0 6px;
+  margin: 0 0 8px;
+  font-weight: 600;
 }
 
 header p {
   margin: 0;
   color: var(--md-text-secondary);
+  font-size: 16px;
 }
 
-h2 { margin: 14px 0 8px; color: var(--md-primary); }
-
-p { margin: 10px 0; color: var(--md-text); }
-
+/* Текст */
+h2 { margin: 18px 0 10px; color: var(--md-primary); }
+p { margin: 12px 0; color: var(--md-text); font-size: 16px; }
 ul { margin: 10px 0 0 0; padding: 0 0 0 18px; }
 
+/* Важное примечание */
 .note {
   display: block;
-  margin-top: 10px;
-  font-weight: 700;
+  margin-top: 12px;
+  font-weight: 600;
   color: var(--md-error);
-  text-align: left;
+  padding: 8px 12px;
+  border-left: 4px solid var(--md-error);
+  background: rgba(176,0,32,0.08);
+  border-radius: var(--radius);
 }
 
-/* ========== Секции ========== */
+/* Секции */
 section {
   background: var(--md-surface);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   padding: 22px 24px;
-  margin: 18px 0;
+  margin: 22px 0;
+  transition: var(--transition);
+}
+section:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
 }
 
-/* ========== Галерея картинок ========== */
+/* Галерея */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
   align-items: start;
-  padding: 0 12px 30px;
+  padding: 0 16px 40px;
+}
+
+.gallery a {
+  display: block;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+.gallery a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
 }
 
 .gallery img {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
   object-fit: cover;
-  transition: transform .25s ease;
+  transition: transform var(--transition);
+}
+.gallery img:hover { transform: scale(1.05); }
+
+/* Lightbox (открытие картинки по клику) */
+.lightbox {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition);
+  z-index: 1000;
+}
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: var(--radius);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+}
+.lightbox:target {
+  opacity: 1;
+  visibility: visible;
 }
 
-.gallery img:hover { transform: scale(1.03); }
+/* Кнопка закрытия */
+.lightbox:target::after {
+  content: "✕";
+  position: fixed;
+  top: 20px; right: 30px;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
 
-/* ========== Футер ========== */
+/* Футер */
 footer {
   text-align: center;
   color: var(--md-text-secondary);
   font-size: 14px;
-  margin: 22px 0 30px;
+  margin: 26px 0 40px;
 }
 
-/* ========== Адаптивность под смартфоны ========== */
+/* Адаптивность */
 @media (max-width: 520px) {
-  .container {
-    width: 100%;
-    padding: 0 8px;
-  }
+  .container { padding: 0 10px; }
 
   section {
-    background: transparent;   /* убираем фон */
-    box-shadow: none;          /* убираем тень */
+    background: transparent;
+    box-shadow: none;
     border-radius: 0;
-    padding: 12px 0;           /* текст шире */
+    padding: 12px 0;
     margin: 12px 0;
   }
 
   header h1 { font-size: 22px; }
-  p { font-size: 16px; }
-  .gallery { grid-template-columns: 1fr; gap: 8px; }
+  p, ul { font-size: 15px; }
+  .gallery { grid-template-columns: 1fr; gap: 10px; }
 }
