@@ -497,7 +497,7 @@
 <div class="container">
   <header>
     <h1>1-Bedroom Apartment for Rent in Odessa</h1>
-    <p>Середньофонтанська / Среднефонтанская, 30/1 (тихий двір / тихий двор)</p>
+    <p>FROM THE OWNER</p>
   </header>
 
   <!-- Language Switcher -->
@@ -560,7 +560,7 @@
 
     <p><i class="fas fa-map-marker-alt"></i> <strong>Great location:</strong> excellent transport connections, within walking distance to the Railway Station, Privoz Market, several universities, supermarkets, water station, park, playground, sports ground, kindergarten, and school.</p>
 
-    <span class="note"><i class="fas fa-exclamation-circle"></i> The apartment is rented only to tenants <strong>without pets and children</strong>.</span>
+    <span class="note"><i class="fas fa-exclamation-circle"></i> The apartment is rented only to tenants <strong>without pets and small children</strong>.</span>
   </section>
 
   <!-- Ukrainian Description -->
@@ -616,7 +616,7 @@
 
     <p><i class="fas fa-map-marker-alt"></i> <strong>Інфраструктура:</strong> зручна транспортна розв'язка, у пішій доступності Залізничний вокзал, Привоз, університети, супермаркети, бювет, парк, дитячий майданчик, спортмайданчик, дитячий садок і школа.</p>
 
-    <span class="note"><i class="fas fa-exclamation-circle"></i> Квартира здається тільки орендарям <strong>без тварин і дітей</strong>.</span>
+    <span class="note"><i class="fas fa-exclamation-circle"></i> Квартира здається тільки орендарям <strong>без тварин і маленьких дітей</strong>.</span>
   </section>
 
   <!-- Russian Description -->
@@ -672,7 +672,7 @@
 
     <p><i class="fas fa-map-marker-alt"></i> <strong>Инфраструктура:</strong> отличная транспортная развязка, в пешей доступности ЖД вокзал, Привоз, университеты, супермаркеты, бювет, парк, детская площадка, спортплощадка, детсад и школы.</p>
 
-    <span class="note"><i class="fas fa-exclamation-circle"></i> Квартира сдаётся только арендаторам <strong>без животных и детей</strong>.</span>
+    <span class="note"><i class="fas fa-exclamation-circle"></i> Квартира сдаётся только арендаторам <strong>без животных и маленьких детей</strong>.</span>
   </section>
 
   <!-- Gallery Section -->
@@ -782,7 +782,7 @@
         </div>
         <div>
           <h3>Phone</h3>
-          <p>+380678746780</p>
+          <p>+38 (067) 874-67-80</p>
         </div>
       </div>
       <div class="contact-item">
@@ -791,14 +791,14 @@
         </div>
         <div>
           <h3>Email</h3>
-          <p>u_bob@ua.fm</p>
+          <p>u_bob@te.net.ua</p>
         </div>
       </div>
     </div>
   </section>
 
   <footer>
-    <p>© 2025 Apartment Rental • Odessa, Ukraine</p>
+    <p>© 2025 Max-from-Odessa Apartment Rental • Odessa, Ukraine</p>
   </footer>
 </div>
 
